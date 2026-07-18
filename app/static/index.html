@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Palmistry AI</title>
+    <meta
+      name="description"
+      content="Discover a personalized palm reading inspired by traditional wisdom and powered by modern AI."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main class="landing-shell" aria-labelledby="page-title">
+      <div class="preview-bg" id="previewBg" aria-hidden="true"></div>
+      <div class="ambient-lines" aria-hidden="true">
+        <span class="contour contour-one"></span>
+        <span class="contour contour-two"></span>
+        <span class="contour contour-three"></span>
+        <span class="contour contour-four"></span>
+      </div>
+      <div class="grain" aria-hidden="true"></div>
+
+      <nav class="topbar" aria-label="Palmistry AI">
+        <a class="brand" href="/" aria-label="Palmistry AI home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>Palmistry AI</span>
+        </a>
+        <div class="nav-actions">
+          <div class="language-switch" aria-label="Reading language">
+            <button class="lang-button is-active" type="button" data-lang="en">EN</button>
+            <button class="lang-button" type="button" data-lang="hi">हि</button>
+          </div>
+          <a class="docs-link" href="/docs">API Docs</a>
+        </div>
+      </nav>
+
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Samudrika Shastra meets vision AI</p>
+          <h1 id="page-title">The Story Hidden in Your Palm</h1>
+          <p class="subheadline">
+            Discover a personalized palm reading inspired by centuries of traditional wisdom
+            and powered by modern AI.
+          </p>
+        </div>
+
+        <form class="upload-card" id="uploadCard">
+          <input
+            class="file-input"
+            id="palmImage"
+            name="image"
+            type="file"
+            accept=".jpg,.jpeg,.png,.heic,image/jpeg,image/png,image/heic"
+          />
+          <input
+            class="file-input"
+            id="cameraImage"
+            name="camera"
+            type="file"
+            accept="image/*"
+            capture="environment"
+          />
+
+          <div class="scanner-frame" aria-hidden="true">
+            <div class="hand-lines">
+              <span class="line heart"></span>
+              <span class="line head"></span>
+              <span class="line life"></span>
+              <span class="line fate"></span>
+            </div>
+            <span class="scanner-beam"></span>
+          </div>
+
+          <div class="upload-copy">
+            <p class="card-kicker">Begin your palm map</p>
+            <h2>Upload a clear palm photo</h2>
+            <p id="uploadHint">Drag &amp; drop your palm image, or choose a photo.</p>
+            <p class="support-note">Supports JPG, PNG, and HEIC.</p>
+          </div>
+
+          <div class="actions">
+            <button class="primary-action" type="button" id="beginButton">
+              Begin Palm Reading
+            </button>
+            <button class="secondary-action" type="button" id="cameraButton">
+              Use Camera
+            </button>
+          </div>
+
+          <div class="status-strip" id="statusStrip" aria-live="polite">
+            <span class="status-dot"></span>
+            Ready for a palm image
+          </div>
+        </form>
+      </section>
+
+      <footer class="trust-footer">
+        <span>Private</span>
+        <span>Processed in seconds</span>
+        <span>Informational only</span>
+      </footer>
+
+      <section class="reading-experience" id="readingExperience" aria-live="polite">
+        <div class="experience-grid">
+          <div class="palm-map-panel">
+            <div class="map-header">
+              <div>
+                <p class="eyebrow">Your Palm Map</p>
+                <h2>Detected Lakshan</h2>
+              </div>
+              <div class="clarity-ring" id="clarityRing" style="--clarity: 0">
+                <span id="clarityValue">0%</span>
+                <small>Clarity</small>
+              </div>
+            </div>
+
+            <div class="palm-stage" id="palmStage">
+              <img id="palmPreview" alt="Uploaded palm preview" />
+              <div class="stage-vignette" aria-hidden="true"></div>
+              <div class="scan-steps" id="scanSteps">
+                <span>Locating palm geometry</span>
+                <span>Tracing Hridaya Rekha</span>
+                <span>Tracing Mastishka Rekha</span>
+                <span>Tracing Jeevan Rekha</span>
+                <span>Preparing your reading</span>
+              </div>
+            </div>
+
+            <div class="lakshan-grid" id="lakshanGrid"></div>
+          </div>
+
+          <div class="reading-panel">
+            <div class="reading-header">
+              <p class="eyebrow">Palm Map Reading</p>
+              <h2 id="readingTitle">Reveal</h2>
+              <p id="readingOverview">
+                Your reading will appear here after the palm lines are traced.
+              </p>
+            </div>
+
+            <div class="section-tabs" role="tablist" aria-label="Reading sections">
+              <button class="tab-button is-active" type="button" data-section="personality">Swabhav</button>
+              <button class="tab-button" type="button" data-section="relationships">Prem</button>
+              <button class="tab-button" type="button" data-section="career">Karma</button>
+              <button class="tab-button" type="button" data-section="health">Jeevan Shakti</button>
+              <button class="tab-button" type="button" data-section="signs">Lakshan</button>
+            </div>
+
+            <article class="insight-card" id="insightCard">
+              <p class="card-kicker" id="insightKicker">Insight unlocked</p>
+              <h3 id="insightTitle">Upload your palm to begin</h3>
+              <p id="insightBody">
+                The selected section will reveal a focused interpretation connected to the highlighted palm line.
+              </p>
+            </article>
+
+            <div class="share-card" id="shareCard">
+              <p class="card-kicker">Share Card Preview</p>
+              <h3>Your top traits</h3>
+              <div class="trait-row" id="traitRow">
+                <span>Vivek</span>
+                <span>Atmabal</span>
+                <span>Karma</span>
+              </div>
+              <p>Traditional reading for reflection and entertainment.</p>
+            </div>
+
+            <div class="reading-actions">
+              <button class="secondary-action" type="button" id="scanAnotherButton">Scan Another Palm</button>
+              <button class="primary-action" type="button" id="copySummaryButton">Copy Summary</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="/static/landing.js"></script>
+  </body>
+</html>

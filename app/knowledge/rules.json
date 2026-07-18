@@ -1,0 +1,271 @@
+{
+  "version": "0.1.0",
+  "tradition": "Samudrika Shastra / Hast Rekha Shastra",
+  "rules": [
+    {
+      "id": "heart_present",
+      "domain": "relationships",
+      "conditions": {"heart.present": true},
+      "weight": 0.5,
+      "source": "Hridaya Rekha (Heart line)",
+      "meaning_en": "The Heart line (Hridaya Rekha) governs emotions, love, and the way one bonds with others.",
+      "meaning_hi": "हृदय रेखा भावनाओं, प्रेम और दूसरों के साथ जुड़ने के तरीके को दर्शाती है।"
+    },
+    {
+      "id": "heart_long",
+      "domain": "relationships",
+      "conditions": {"heart.length": "long"},
+      "weight": 0.9,
+      "source": "Hridaya Rekha — length",
+      "meaning_en": "A long Heart line indicates a warm, openly affectionate nature and a capacity for deep, lasting attachments to those you love.",
+      "meaning_hi": "लंबी हृदय रेखा गर्म, खुले स्नेही स्वभाव और अपने प्रियजनों के प्रति गहरे, स्थायी लगाव की क्षमता दर्शाती है।"
+    },
+    {
+      "id": "heart_short",
+      "domain": "relationships",
+      "conditions": {"heart.length": "short"},
+      "weight": 0.85,
+      "source": "Hridaya Rekha — length",
+      "meaning_en": "A shorter Heart line suggests an independent emotional nature; you connect with a wide range of people and value your own space in relationships.",
+      "meaning_hi": "छोटी हृदय रेखा एक स्वतंत्र भावनात्मक स्वभाव का संकेत देती है; आप कई प्रकार के लोगों से जुड़ते हैं और रिश्तों में अपने स्थान को महत्व देते हैं।"
+    },
+    {
+      "id": "heart_curved",
+      "domain": "relationships",
+      "conditions": {"heart.curved": true},
+      "weight": 0.7,
+      "source": "Hridaya Rekha — curvature",
+      "meaning_en": "A curving Heart line reflects an expressive, romantic temperament that shows feelings openly and leads with the heart.",
+      "meaning_hi": "घुमावदार हृदय रेखा एक अभिव्यक्तिपूर्ण, रोमांटिक स्वभाव को दर्शाती है जो भावनाओं को खुलकर व्यक्त करता है और दिल की सुनता है।"
+    },
+    {
+      "id": "heart_straight",
+      "domain": "relationships",
+      "conditions": {"heart.curved": false},
+      "weight": 0.6,
+      "source": "Hridaya Rekha — curvature",
+      "meaning_en": "A straighter Heart line points to a measured, thoughtful approach to love — you value loyalty and consider matters of the heart with your mind as well.",
+      "meaning_hi": "अपेक्षाकृत सीधी हृदय रेखा प्रेम के प्रति एक संतुलित, विचारशील दृष्टिकोण दर्शाती है — आप निष्ठा को महत्व देते हैं और भावनाओं को बुद्धि से भी तौलते हैं।"
+    },
+    {
+      "id": "head_present",
+      "domain": "intellect",
+      "conditions": {"head.present": true},
+      "weight": 0.5,
+      "source": "Mastishka Rekha (Head line)",
+      "meaning_en": "The Head line (Mastishka Rekha) reveals intellect, thinking style, and how you approach problems.",
+      "meaning_hi": "मस्तिष्क रेखा बुद्धि, सोचने की शैली और समस्याओं को हल करने के तरीके को प्रकट करती है।"
+    },
+    {
+      "id": "head_long",
+      "domain": "intellect",
+      "conditions": {"head.length": "long"},
+      "weight": 0.9,
+      "source": "Mastishka Rekha — length",
+      "meaning_en": "A long Head line indicates a broad, curious mind that enjoys exploring many subjects and thinks matters through in depth.",
+      "meaning_hi": "लंबी मस्तिष्क रेखा एक विस्तृत, जिज्ञासु मन का संकेत देती है जो कई विषयों की खोज का आनंद लेता है और गहराई से विचार करता है।"
+    },
+    {
+      "id": "head_short",
+      "domain": "intellect",
+      "conditions": {"head.length": "short"},
+      "weight": 0.85,
+      "source": "Mastishka Rekha — length",
+      "meaning_en": "A shorter Head line suggests a focused, practical intellect — you prefer to concentrate deeply on one subject and act decisively rather than scatter your attention.",
+      "meaning_hi": "छोटी मस्तिष्क रेखा एक केंद्रित, व्यावहारिक बुद्धि का संकेत देती है — आप एक विषय पर गहराई से ध्यान केंद्रित करना और निर्णायक रूप से कार्य करना पसंद करते हैं।"
+    },
+    {
+      "id": "head_curved",
+      "domain": "intellect",
+      "conditions": {"head.curved": true},
+      "weight": 0.7,
+      "source": "Mastishka Rekha — curvature",
+      "meaning_en": "A curving Head line marks a creative, imaginative thinker who approaches problems with intuition and originality.",
+      "meaning_hi": "घुमावदार मस्तिष्क रेखा एक रचनात्मक, कल्पनाशील विचारक को दर्शाती है जो समस्याओं को अंतर्ज्ञान और मौलिकता से हल करता है।"
+    },
+    {
+      "id": "head_straight",
+      "domain": "career",
+      "conditions": {"head.curved": false},
+      "weight": 0.6,
+      "source": "Mastishka Rekha — curvature",
+      "meaning_en": "A straight Head line reflects a logical, realistic mind that reasons in a clear, structured way — well suited to planning and practical decision-making.",
+      "meaning_hi": "सीधी मस्तिष्क रेखा एक तार्किक, यथार्थवादी मन को दर्शाती है जो स्पष्ट, व्यवस्थित तरीके से सोचता है — योजना बनाने और व्यावहारिक निर्णय लेने के लिए उपयुक्त।"
+    },
+    {
+      "id": "life_present",
+      "domain": "health",
+      "conditions": {"life.present": true},
+      "weight": 0.5,
+      "source": "Jeevan Rekha (Life line)",
+      "meaning_en": "The Life line (Jeevan Rekha) reflects vitality, energy, and zest for life — it does NOT indicate how long you will live.",
+      "meaning_hi": "जीवन रेखा जीवन शक्ति, ऊर्जा और उत्साह को दर्शाती है — यह इस बात का संकेत नहीं देती कि आप कितने समय तक जीवित रहेंगे।"
+    },
+    {
+      "id": "life_long",
+      "domain": "health",
+      "conditions": {"life.length": "long"},
+      "weight": 0.9,
+      "source": "Jeevan Rekha — length",
+      "meaning_en": "A long, flowing Life line signals steady vitality and enthusiasm, and a nature that draws strength from family and the people around you.",
+      "meaning_hi": "लंबी, प्रवाहमान जीवन रेखा स्थिर जीवन शक्ति और उत्साह का संकेत देती है, और एक ऐसा स्वभाव जो परिवार और आसपास के लोगों से शक्ति प्राप्त करता है।"
+    },
+    {
+      "id": "life_short",
+      "domain": "health",
+      "conditions": {"life.length": "short"},
+      "weight": 0.85,
+      "source": "Jeevan Rekha — length",
+      "meaning_en": "A shorter Life line points to a self-reliant, independent spirit who prefers to meet challenges on their own terms. (Remember: it says nothing about lifespan.)",
+      "meaning_hi": "छोटी जीवन रेखा एक आत्मनिर्भर, स्वतंत्र भावना की ओर इशारा करती है जो चुनौतियों का सामना अपने तरीके से करना पसंद करती है। (याद रखें: यह आयु के बारे में कुछ नहीं कहती।)"
+    },
+    {
+      "id": "life_curved",
+      "domain": "health",
+      "conditions": {"life.curved": true},
+      "weight": 0.7,
+      "source": "Jeevan Rekha — curvature (Shukra / Venus mount)",
+      "meaning_en": "A Life line that curves generously around the thumb (the Mount of Venus) indicates warmth, physical energy, and a passionate, affectionate disposition.",
+      "meaning_hi": "अंगूठे (शुक्र पर्वत) के चारों ओर उदारता से घूमती जीवन रेखा गर्मजोशी, शारीरिक ऊर्जा और एक भावुक, स्नेही स्वभाव का संकेत देती है।"
+    },
+    {
+      "id": "head_life_both_long",
+      "domain": "career",
+      "conditions": {"head.length": "long", "life.length": "long"},
+      "weight": 0.8,
+      "source": "Combination reading — Mastishka + Jeevan",
+      "meaning_en": "With both a long Head line and a strong Life line, you combine mental range with lasting energy — a promising sign for sustained effort toward ambitious goals.",
+      "meaning_hi": "लंबी मस्तिष्क रेखा और मजबूत जीवन रेखा दोनों के साथ, आप मानसिक विस्तार को स्थायी ऊर्जा के साथ जोड़ते हैं — महत्वाकांक्षी लक्ष्यों की दिशा में निरंतर प्रयास के लिए एक शुभ संकेत।"
+    },
+    {
+      "id": "heart_head_both_long",
+      "domain": "personality",
+      "conditions": {"heart.length": "long", "head.length": "long"},
+      "weight": 0.75,
+      "source": "Combination reading — Hridaya + Mastishka",
+      "meaning_en": "A long Heart line paired with a long Head line suggests a rare balance of feeling and thought — you can lead with compassion while still reasoning clearly.",
+      "meaning_hi": "लंबी हृदय रेखा और लंबी मस्तिष्क रेखा का संयोग भावना और विचार का दुर्लभ संतुलन दर्शाता है — आप करुणा के साथ आगे बढ़ सकते हैं और साथ ही स्पष्ट रूप से तर्क भी कर सकते हैं।"
+    },
+
+    {
+      "id": "fate_present",
+      "domain": "career",
+      "conditions": {"fate.present": true},
+      "weight": 0.6,
+      "source": "Bhagya Rekha (Fate line)",
+      "meaning_en": "The Fate line (Bhagya Rekha) reflects your career, life direction, and the role destiny and circumstance play in your path.",
+      "meaning_hi": "भाग्य रेखा आपके करियर, जीवन की दिशा और आपके मार्ग में भाग्य एवं परिस्थितियों की भूमिका को दर्शाती है।"
+    },
+    {
+      "id": "fate_long",
+      "domain": "career",
+      "conditions": {"fate.length": "long"},
+      "weight": 0.9,
+      "source": "Bhagya Rekha — length",
+      "meaning_en": "A long, clear Fate line indicates a strong sense of purpose and a life path that tends to unfold with steady direction and support from circumstance.",
+      "meaning_hi": "लंबी, स्पष्ट भाग्य रेखा एक मजबूत उद्देश्य की भावना और एक ऐसे जीवन-पथ का संकेत देती है जो स्थिर दिशा और परिस्थितियों के सहयोग से आगे बढ़ता है।"
+    },
+    {
+      "id": "fate_short",
+      "domain": "career",
+      "conditions": {"fate.length": "short"},
+      "weight": 0.85,
+      "source": "Bhagya Rekha — length",
+      "meaning_en": "A shorter Fate line often marks a self-made path — you carve your own direction through effort and choice rather than relying on circumstance.",
+      "meaning_hi": "छोटी भाग्य रेखा अक्सर एक स्वनिर्मित मार्ग को दर्शाती है — आप परिस्थितियों पर निर्भर रहने के बजाय अपने प्रयास और निर्णयों से अपनी दिशा बनाते हैं।"
+    },
+    {
+      "id": "fate_curved",
+      "domain": "career",
+      "conditions": {"fate.curved": true},
+      "weight": 0.7,
+      "source": "Bhagya Rekha — curvature",
+      "meaning_en": "A winding Fate line suggests a varied career journey with changes of direction, each turn bringing new experience and growth.",
+      "meaning_hi": "घुमावदार भाग्य रेखा एक विविध करियर-यात्रा का संकेत देती है जिसमें दिशा-परिवर्तन होते हैं, और हर मोड़ नया अनुभव और विकास लाता है।"
+    },
+    {
+      "id": "fate_fork_end",
+      "domain": "career",
+      "conditions": {"fate.fork_end": true},
+      "weight": 0.75,
+      "source": "Bhagya Rekha — fork",
+      "meaning_en": "A fork at the end of the Fate line points to more than one source of success — you may thrive across parallel pursuits or income paths.",
+      "meaning_hi": "भाग्य रेखा के अंत में द्विशाखा एक से अधिक सफलता के स्रोतों की ओर इशारा करती है — आप समानांतर कार्यों या आय के मार्गों में फल-फूल सकते हैं।"
+    },
+
+    {
+      "id": "head_fork_end",
+      "domain": "intellect",
+      "conditions": {"head.fork_end": true},
+      "weight": 0.85,
+      "source": "Mastishka Rekha — fork (the 'writer's fork')",
+      "meaning_en": "A fork at the end of the Head line — traditionally called the writer's fork — marks a mind that blends imagination with logic, gifted at seeing more than one side of things.",
+      "meaning_hi": "मस्तिष्क रेखा के अंत में द्विशाखा — जिसे परंपरागत रूप से 'लेखक की द्विशाखा' कहते हैं — एक ऐसे मन को दर्शाती है जो कल्पना को तर्क के साथ जोड़ता है और किसी भी बात के कई पहलू देखने में निपुण होता है।"
+    },
+    {
+      "id": "heart_fork_end",
+      "domain": "relationships",
+      "conditions": {"heart.fork_end": true},
+      "weight": 0.7,
+      "source": "Hridaya Rekha — fork",
+      "meaning_en": "A branching end to the Heart line reflects a balanced, generous way of loving — warmth for others held together with care for yourself.",
+      "meaning_hi": "हृदय रेखा का शाखाओं में बँटा सिरा प्रेम के एक संतुलित, उदार तरीके को दर्शाता है — दूसरों के लिए गर्मजोशी के साथ-साथ अपने लिए भी देखभाल।"
+    },
+    {
+      "id": "life_fork_end",
+      "domain": "health",
+      "conditions": {"life.fork_end": true},
+      "weight": 0.65,
+      "source": "Jeevan Rekha — fork",
+      "meaning_en": "A fork at the close of the Life line traditionally signals a love of movement and change — travel, relocation, or a broadening of horizons.",
+      "meaning_hi": "जीवन रेखा के अंत में द्विशाखा परंपरागत रूप से गति और परिवर्तन के प्रति लगाव का संकेत देती है — यात्रा, स्थान-परिवर्तन, या क्षितिज का विस्तार।"
+    },
+
+    {
+      "id": "head_breaks",
+      "domain": "intellect",
+      "conditions": {"head.breaks_present": true},
+      "weight": 0.6,
+      "source": "Mastishka Rekha — breaks",
+      "meaning_en": "Breaks along the Head line traditionally mark shifts in thinking or focus — periods where your outlook was reshaped by new understanding.",
+      "meaning_hi": "मस्तिष्क रेखा में विच्छेद परंपरागत रूप से सोच या ध्यान में बदलाव को दर्शाते हैं — ऐसे दौर जब नई समझ ने आपके दृष्टिकोण को नया रूप दिया।"
+    },
+    {
+      "id": "life_breaks",
+      "domain": "health",
+      "conditions": {"life.breaks_present": true},
+      "weight": 0.6,
+      "source": "Jeevan Rekha — breaks",
+      "meaning_en": "Breaks in the Life line traditionally indicate significant transitions — changes of place, phase, or lifestyle — rather than anything about the length of life.",
+      "meaning_hi": "जीवन रेखा में विच्छेद परंपरागत रूप से महत्वपूर्ण बदलावों का संकेत देते हैं — स्थान, चरण या जीवनशैली के परिवर्तन — न कि आयु से संबंधित कुछ भी।"
+    },
+
+    {
+      "id": "fate_head_both_long",
+      "domain": "career",
+      "conditions": {"fate.length": "long", "head.length": "long"},
+      "weight": 0.8,
+      "source": "Combination reading — Bhagya + Mastishka",
+      "meaning_en": "A strong Fate line together with a long Head line is a favourable sign for career: clear direction guided by a broad, capable mind.",
+      "meaning_hi": "मजबूत भाग्य रेखा के साथ लंबी मस्तिष्क रेखा करियर के लिए एक शुभ संकेत है: एक विस्तृत, सक्षम बुद्धि द्वारा निर्देशित स्पष्ट दिशा।"
+    },
+    {
+      "id": "fate_present_heart_long",
+      "domain": "career",
+      "conditions": {"fate.present": true, "heart.length": "long"},
+      "weight": 0.7,
+      "source": "Combination reading — Bhagya + Hridaya",
+      "meaning_en": "With a defined Fate line and a warm, long Heart line, your relationships and personal warmth tend to support and strengthen your life's work.",
+      "meaning_hi": "एक स्पष्ट भाग्य रेखा और गर्म, लंबी हृदय रेखा के साथ, आपके संबंध और व्यक्तिगत गर्मजोशी आपके जीवन-कार्य को सहारा देते और मजबूत करते हैं।"
+    },
+    {
+      "id": "head_heart_both_curved",
+      "domain": "personality",
+      "conditions": {"head.curved": true, "heart.curved": true},
+      "weight": 0.7,
+      "source": "Combination reading — curvature",
+      "meaning_en": "Both a curving Head line and a curving Heart line point to an artistic, sensitive, imaginative nature that feels and creates deeply.",
+      "meaning_hi": "घुमावदार मस्तिष्क रेखा और घुमावदार हृदय रेखा दोनों एक कलात्मक, संवेदनशील, कल्पनाशील स्वभाव की ओर इशारा करती हैं जो गहराई से महसूस करता और सृजन करता है।"
+    }
+  ]
+}

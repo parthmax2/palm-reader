@@ -1,0 +1,17 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.log
+
+# Uploaded / user palm images (PII) — never commit
+data/
+uploads/
+
+# OS
+.DS_Store
+Thumbs.db

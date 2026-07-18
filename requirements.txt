@@ -1,0 +1,20 @@
+# --- Web / API ---
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
+pydantic==2.10.4
+pydantic-settings==2.7.1
+
+# --- Computer Vision pipeline (pinned for compatibility) ---
+torch==2.5.1
+torchvision==0.20.1
+numpy==1.26.4
+opencv-python==4.10.0.84
+scikit-image==0.24.0
+pillow==11.0.0
+pillow-heif==0.21.0
+mediapipe==0.10.21
+matplotlib==3.9.3
+
+# --- LLM (reading generation) ---
+google-genai==0.8.0
